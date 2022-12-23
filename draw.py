@@ -45,10 +45,5 @@ def show_tree(expression: str) -> None:
     G = visualize_expression(expression)
     pos = graphviz_layout(G, prog="dot")
     plt.axis("off")
-    nx.draw_networkx(G, pos, with_labels=True, node_size=500, node_color="skyblue", font_size=15)
+    nx.draw_networkx(G, pos, with_labels=True, node_color="skyblue")
     plt.show()
-
-
-# if __name__ == "__main__":
-#     expression = "ab+de/^"
-#     visualize_expression(expression)
