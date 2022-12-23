@@ -1,10 +1,10 @@
 """Draw the tree of the infix expression"""
-from structures.tree import Node
-from structures.stack import Stack
-
-import networkx as nx
 import matplotlib.pyplot as plt
+import networkx as nx
 from networkx.drawing.nx_pydot import graphviz_layout
+
+from structures.stack import Stack
+from structures.tree import Node
 
 
 def construct_tree(postfix_expression: str) -> Stack:
