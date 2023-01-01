@@ -107,4 +107,4 @@ def detect_type(expression: str) -> str:
     elif expression[-1] in operators:
         return "postfix"
     else:
-        return "invalid"
+        raise Exception("invalid")

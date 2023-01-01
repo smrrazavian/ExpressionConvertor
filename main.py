@@ -9,7 +9,7 @@ from expression_convertor import (
 )
 
 
-def main():
+def main() -> None:
     """Main function"""
     expression = input("Enter expression: ")
     expression = expression.replace(" ", "")

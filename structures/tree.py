@@ -4,10 +4,11 @@
 class Node:
     """Tree structure implementation"""
 
-    def __init__(self, value, left, right):
+    def __init__(self, value, left, right, id):
         self.value = value
         self.left = left
         self.right = right
+        self.id = id
 
     def is_operator(self):
         return self.value in ["+", "-", "*", "/", "^"]
