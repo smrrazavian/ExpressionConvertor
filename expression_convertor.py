@@ -99,7 +99,9 @@ def detect_type(expression: str) -> str:
     """Detect type of expression"""
     operators = ["+", "-", "*", "/", "^"]
     if (expression[0].isalpha() and expression[-1].isalpha()) or (
-        expression[0] == "(" and expression[-1] == ")"
+        expression[0] == "(" and expression[-1] == ")") or (
+            expression[0].isalpha() and expression[-1] == ")") or (
+                expression[0] == "(" and expression[-1].isalpha()
     ):
         return "infix"
     elif expression[0] in operators:

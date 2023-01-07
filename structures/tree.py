@@ -10,9 +10,6 @@ class Node:
         self.right = right
         self.id = id
 
-    def is_operator(self):
-        return self.value in ["+", "-", "*", "/", "^"]
-
     def __str__(self):
         return self.value
 
